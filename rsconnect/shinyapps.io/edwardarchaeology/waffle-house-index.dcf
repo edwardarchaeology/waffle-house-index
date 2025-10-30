@@ -1,0 +1,10 @@
+name: waffle-house-index
+title:
+username: edwardarchaeology
+account: edwardarchaeology
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15924030
+bundleId: 11110426
+url: https://edwardarchaeology.shinyapps.io/waffle-house-index/
+version: 1
