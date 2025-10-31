@@ -6,16 +6,16 @@ client_version = '1.23.18'
 created_at = ''
 dismissed_at = ''
 type = 'r-shiny'
-configuration_name = 'Waffle-House-Index-JHRE'
-id = '019a3737-96f7-3450-b007-3aaddd690d9b'
-dashboard_url = 'https://connect.posit.cloud/ecleland/content/019a3737-96f7-3450-b007-3aaddd690d9b'
-direct_url = 'https://019a3737-96f7-3450-b007-3aaddd690d9b.share.connect.posit.cloud'
-logs_url = 'https://connect.posit.cloud/ecleland/content/019a3737-96f7-3450-b007-3aaddd690d9b/history'
-deployed_at = '2025-10-30T17:27:01-05:00'
-bundle_id = '019a373b-23c5-e7bf-246c-0bf2c9941776'
+configuration_name = 'Waffle-House-Index-CB9C'
+id = '019a3adf-db7d-2e9a-8c54-c6e22c9e7627'
+dashboard_url = 'https://connect.posit.cloud/ecleland/content/019a3adf-db7d-2e9a-8c54-c6e22c9e7627'
+direct_url = 'https://019a3adf-db7d-2e9a-8c54-c6e22c9e7627.share.connect.posit.cloud'
+logs_url = 'https://connect.posit.cloud/ecleland/content/019a3adf-db7d-2e9a-8c54-c6e22c9e7627/history'
+deployed_at = '2025-10-31T10:25:53-05:00'
+bundle_id = '019a3adf-db7e-f904-c175-b1c14588050c'
 files = [
-  '.posit/publish/Waffle-House-Index-JHRE.toml',
-  '.posit/publish/deployments/deployment-PT3I.toml',
+  '.posit/publish/Waffle-House-Index-CB9C.toml',
+  '.posit/publish/deployments/deployment-45TO.toml',
   'app.R',
   'historical_data/covid_closures.csv',
   'renv.lock'
@@ -23,11 +23,6 @@ files = [
 
 [connect_cloud]
 account_name = 'ecleland'
-
-[deployment_error]
-code = 'unknown'
-message = 'Invalid bundle: We did not receive your source code in time. Please be sure to upload the source code shortly after publishing a revision.'
-operation = 'publish/deployContent'
 
 [configuration]
 product_type = 'connect_cloud'
@@ -37,18 +32,20 @@ entrypoint = 'app.R'
 validate = true
 files = [
   '/app.R',
-  '/.posit/publish/Waffle-House-Index-JHRE.toml',
-  '/.posit/publish/deployments/deployment-PT3I.toml',
+  '/renv.lock',
+  '/.posit/publish/Waffle-House-Index-CB9C.toml',
+  '/.posit/publish/deployments/deployment-45TO.toml',
   '/historical_data'
 ]
 title = 'Waffle-House-Index'
+secrets = ['MAPTILER_API_KEY']
 
 [configuration.r]
-version = '4.4.2'
+version = '4.5.1'
 
 [renv]
 [renv.r]
-version = '4.4.2'
+version = '4.5.1'
 
 [[renv.r.repositories]]
 name = 'CRAN'
@@ -102,14 +99,14 @@ author = 'Yihui Xie [aut], Joe Cheng [aut], Xianying Tan [aut], Garrick Aden-Bui
 
 [renv.packages.KernSmooth]
 package = 'KernSmooth'
-version = '2.23-24'
+version = '2.23-26'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 2.5.0)', 'stats']
 hash = ''
 title = 'Functions for Kernel Smoothing Supporting Wand & Jones (1995)'
-'authors@r' = 'c(person("Matt", "Wand", role = "aut", email = "Matt.Wand@uts.edu.au"), person("Cleve", "Moler", role = "ctb", comment = "LINPACK routines in src/d*"), person("Brian", "Ripley", role = c("trl", "cre", "ctb"), email = "ripley@stats.ox.ac.uk", comment = "R port and updates"))'
-maintainer = 'Brian Ripley <ripley@stats.ox.ac.uk>'
+'authors@r' = 'c(person("Matt", "Wand", role = "aut", email = "Matt.Wand@uts.edu.au"), person("Cleve", "Moler", role = "ctb", comment = "LINPACK routines in src/d*"), person("Brian", "Ripley", role = c("trl", "cre", "ctb"), email = "Brian.Ripley@R-project.org", comment = "R port and updates"))'
+maintainer = 'Brian Ripley <Brian.Ripley@R-project.org>'
 description = 'Functions for kernel smoothing (and density estimation) corresponding to the book:  Wand, M.P. and Jones, M.C. (1995) "Kernel Smoothing".'
 license = 'Unlimited'
 suggests = ['MASS', 'carData']
@@ -118,14 +115,14 @@ author = 'Matt Wand [aut], Cleve Moler [ctb] (LINPACK routines in src/d*), Brian
 
 [renv.packages.MASS]
 package = 'MASS'
-version = '7.3-61'
+version = '7.3-65'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 4.4.0)', 'grDevices', 'graphics', 'stats', 'utils']
 hash = ''
 title = "Support Functions and Datasets for Venables and Ripley's MASS"
-'authors@r' = 'c(person("Brian", "Ripley", role = c("aut", "cre", "cph"), email = "ripley@stats.ox.ac.uk"), person("Bill", "Venables", role = c("aut", "cph")), person(c("Douglas", "M."), "Bates", role = "ctb"), person("Kurt", "Hornik", role = "trl", comment = "partial port ca 1998"), person("Albrecht", "Gebhardt", role = "trl", comment = "partial port ca 1998"), person("David", "Firth", role = "ctb", comment = "support functions for polr"))'
-maintainer = 'Brian Ripley <ripley@stats.ox.ac.uk>'
+'authors@r' = 'c(person("Brian", "Ripley", role = c("aut", "cre", "cph"), email = "Brian.Ripley@R-project.org"), person("Bill", "Venables", role = c("aut", "cph")), person(c("Douglas", "M."), "Bates", role = "ctb"), person("Kurt", "Hornik", role = "trl", comment = "partial port ca 1998"), person("Albrecht", "Gebhardt", role = "trl", comment = "partial port ca 1998"), person("David", "Firth", role = "ctb", comment = "support functions for polr"))'
+maintainer = 'Brian Ripley <Brian.Ripley@R-project.org>'
 description = 'Functions and datasets to support Venables and Ripley, "Modern Applied Statistics with S" (4th edition, 2002).'
 url = 'http://www.stats.ox.ac.uk/pub/MASS4/'
 license = 'GPL-2 | GPL-3'
@@ -136,13 +133,13 @@ author = 'Brian Ripley [aut, cre, cph], Bill Venables [aut, cph], Douglas M. Bat
 
 [renv.packages.Matrix]
 package = 'Matrix'
-version = '1.7-1'
+version = '1.7-3'
 source = 'Repository'
 repository = 'CRAN'
-depends = ['R (>= 4.4.0)', 'methods']
+depends = ['R (>= 4.4)', 'methods']
 hash = ''
 title = 'Sparse and Dense Matrix Classes and Methods'
-'authors@r' = "c(person(\"Douglas\", \"Bates\", role = \"aut\", comment = c(ORCID = \"0000-0001-8316-9503\")), person(\"Martin\", \"Maechler\", role = c(\"aut\", \"cre\"), email = \"mmaechler+Matrix@gmail.com\", comment = c(ORCID = \"0000-0002-8685-9910\")), person(\"Mikael\", \"Jagan\", role = \"aut\", comment = c(ORCID = \"0000-0002-3542-2938\")), person(\"Timothy A.\", \"Davis\", role = \"ctb\", comment = c(ORCID = \"0000-0001-7614-6899\", \"SuiteSparse libraries\", \"collaborators listed in dir(system.file(\\\"doc\\\", \\\"SuiteSparse\\\", package=\\\"Matrix\\\"), pattern=\\\"License\\\", full.names=TRUE, recursive=TRUE)\")), person(\"George\", \"Karypis\", role = \"ctb\", comment = c(ORCID = \"0000-0003-2753-1437\", \"METIS library\", \"Copyright: Regents of the University of Minnesota\")), person(\"Jason\", \"Riedy\", role = \"ctb\", comment = c(ORCID = \"0000-0002-4345-4200\", \"GNU Octave's condest() and onenormest()\", \"Copyright: Regents of the University of California\")), person(\"Jens\", \"Oehlschlägel\", role = \"ctb\", comment = \"initial nearPD()\"), person(\"R Core Team\", role = \"ctb\", comment = \"base R's matrix implementation\"))"
+'authors@r' = "c(person(\"Douglas\", \"Bates\", role = \"aut\", comment = c(ORCID = \"0000-0001-8316-9503\")), person(\"Martin\", \"Maechler\", role = c(\"aut\", \"cre\"), email = \"mmaechler+Matrix@gmail.com\", comment = c(ORCID = \"0000-0002-8685-9910\")), person(\"Mikael\", \"Jagan\", role = \"aut\", comment = c(ORCID = \"0000-0002-3542-2938\")), person(\"Timothy A.\", \"Davis\", role = \"ctb\", comment = c(ORCID = \"0000-0001-7614-6899\", \"SuiteSparse libraries\", \"collaborators listed in dir(system.file(\\\"doc\\\", \\\"SuiteSparse\\\", package=\\\"Matrix\\\"), pattern=\\\"License\\\", full.names=TRUE, recursive=TRUE)\")), person(\"George\", \"Karypis\", role = \"ctb\", comment = c(ORCID = \"0000-0003-2753-1437\", \"METIS library\", \"Copyright: Regents of the University of Minnesota\")), person(\"Jason\", \"Riedy\", role = \"ctb\", comment = c(ORCID = \"0000-0002-4345-4200\", \"GNU Octave's condest() and onenormest()\", \"Copyright: Regents of the University of California\")), person(\"Jens\", \"Oehlschlägel\", role = \"ctb\", comment = \"initial nearPD()\"), person(\"R Core Team\", role = \"ctb\", comment = c(ROR = \"02zz1nj61\", \"base R's matrix implementation\")))"
 maintainer = 'Martin Maechler <mmaechler+Matrix@gmail.com>'
 description = "A rich hierarchy of sparse and dense matrix classes, including general, symmetric, triangular, and diagonal matrices with numeric, logical, or pattern entries.  Efficient methods for operating on such matrices, often wrapping the 'BLAS', 'LAPACK', and 'SuiteSparse' libraries."
 url = 'https://Matrix.R-forge.R-project.org'
@@ -152,7 +149,7 @@ imports = ['grDevices', 'graphics', 'grid', 'lattice', 'stats', 'utils']
 suggests = ['MASS', 'datasets', 'sfsmisc', 'tools']
 encoding = 'UTF-8'
 needscompilation = 'yes'
-author = "Douglas Bates [aut] (<https://orcid.org/0000-0001-8316-9503>), Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>), Mikael Jagan [aut] (<https://orcid.org/0000-0002-3542-2938>), Timothy A. Davis [ctb] (<https://orcid.org/0000-0001-7614-6899>, SuiteSparse libraries, collaborators listed in dir(system.file(\"doc\", \"SuiteSparse\", package=\"Matrix\"), pattern=\"License\", full.names=TRUE, recursive=TRUE)), George Karypis [ctb] (<https://orcid.org/0000-0003-2753-1437>, METIS library, Copyright: Regents of the University of Minnesota), Jason Riedy [ctb] (<https://orcid.org/0000-0002-4345-4200>, GNU Octave's condest() and onenormest(), Copyright: Regents of the University of California), Jens Oehlschlägel [ctb] (initial nearPD()), R Core Team [ctb] (base R's matrix implementation)"
+author = "Douglas Bates [aut] (<https://orcid.org/0000-0001-8316-9503>), Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>), Mikael Jagan [aut] (<https://orcid.org/0000-0002-3542-2938>), Timothy A. Davis [ctb] (<https://orcid.org/0000-0001-7614-6899>, SuiteSparse libraries, collaborators listed in dir(system.file(\"doc\", \"SuiteSparse\", package=\"Matrix\"), pattern=\"License\", full.names=TRUE, recursive=TRUE)), George Karypis [ctb] (<https://orcid.org/0000-0003-2753-1437>, METIS library, Copyright: Regents of the University of Minnesota), Jason Riedy [ctb] (<https://orcid.org/0000-0002-4345-4200>, GNU Octave's condest() and onenormest(), Copyright: Regents of the University of California), Jens Oehlschlägel [ctb] (initial nearPD()), R Core Team [ctb] (02zz1nj61, base R's matrix implementation)"
 
 [renv.packages.R6]
 package = 'R6'
@@ -293,14 +290,14 @@ author = 'Winston Chang [aut, cre], Posit Software, PBC [cph, fnd]'
 
 [renv.packages.class]
 package = 'class'
-version = '7.3-22'
+version = '7.3-23'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 3.0.0)', 'stats', 'utils']
 hash = ''
 title = 'Functions for Classification'
-'authors@r' = 'c(person("Brian", "Ripley", role = c("aut", "cre", "cph"), email = "ripley@stats.ox.ac.uk"), person("William", "Venables", role = "cph"))'
-maintainer = 'Brian Ripley <ripley@stats.ox.ac.uk>'
+'authors@r' = 'c(person("Brian", "Ripley", role = c("aut", "cre", "cph"), email = "Brian.Ripley@R-project.org"), person("William", "Venables", role = "cph"))'
+maintainer = 'Brian Ripley <Brian.Ripley@R-project.org>'
 description = 'Various functions for classification, including k-nearest neighbour, Learning Vector Quantization and Self-Organizing Maps.'
 url = 'http://www.stats.ox.ac.uk/pub/MASS4/'
 license = 'GPL-2 | GPL-3'
@@ -355,7 +352,7 @@ author = 'Gábor Csárdi [aut, cre], Hadley Wickham [ctb], Kirill Müller [ctb],
 
 [renv.packages.cluster]
 package = 'cluster'
-version = '2.1.6'
+version = '2.1.8.1'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 3.5.0)']
@@ -603,13 +600,13 @@ author = 'Richard Iannone [aut, cre] (<https://orcid.org/0000-0003-3925-190X>), 
 
 [renv.packages.foreign]
 package = 'foreign'
-version = '0.8-87'
+version = '0.8-90'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 4.0.0)']
 hash = ''
 title = "Read Data Stored by 'Minitab', 'S', 'SAS', 'SPSS', 'Stata', 'Systat', 'Weka', 'dBase', ..."
-'authors@r' = 'c( person("R Core Team", email = "R-core@R-project.org", role = c("aut", "cph", "cre")), person("Roger", "Bivand", role = c("ctb", "cph")), person(c("Vincent", "J."), "Carey", role = c("ctb", "cph")), person("Saikat", "DebRoy", role = c("ctb", "cph")), person("Stephen", "Eglen", role = c("ctb", "cph")), person("Rajarshi", "Guha", role = c("ctb", "cph")), person("Swetlana", "Herbrandt", role = "ctb"), person("Nicholas", "Lewin-Koh", role = c("ctb", "cph")), person("Mark", "Myatt", role = c("ctb", "cph")), person("Michael", "Nelson", role = "ctb"), person("Ben", "Pfaff", role = "ctb"), person("Brian", "Quistorff", role = "ctb"), person("Frank", "Warmerdam", role = c("ctb", "cph")), person("Stephen", "Weigand", role = c("ctb", "cph")), person("Free Software Foundation, Inc.", role = "cph"))'
+'authors@r' = 'c( person("R Core Team", email = "R-core@R-project.org", role = c("aut", "cph", "cre"), comment = c(ROR = "02zz1nj61")), person("Roger", "Bivand", role = c("ctb", "cph")), person(c("Vincent", "J."), "Carey", role = c("ctb", "cph")), person("Saikat", "DebRoy", role = c("ctb", "cph")), person("Stephen", "Eglen", role = c("ctb", "cph")), person("Rajarshi", "Guha", role = c("ctb", "cph")), person("Swetlana", "Herbrandt", role = "ctb"), person("Nicholas", "Lewin-Koh", role = c("ctb", "cph")), person("Mark", "Myatt", role = c("ctb", "cph")), person("Michael", "Nelson", role = "ctb"), person("Ben", "Pfaff", role = "ctb"), person("Brian", "Quistorff", role = "ctb"), person("Frank", "Warmerdam", role = c("ctb", "cph")), person("Stephen", "Weigand", role = c("ctb", "cph")), person("Free Software Foundation, Inc.", role = "cph"))'
 maintainer = 'R Core Team <R-core@R-project.org>'
 description = "Reading and writing data stored by some versions of 'Epi Info', 'Minitab', 'S', 'SAS', 'SPSS', 'Stata', 'Systat', 'Weka', and for reading and writing some 'dBase' files."
 url = 'https://svn.r-project.org/R-packages/trunk/foreign/'
@@ -617,7 +614,7 @@ bugreports = 'https://bugs.r-project.org'
 license = 'GPL (>= 2)'
 imports = ['methods', 'utils', 'stats']
 needscompilation = 'yes'
-author = 'R Core Team [aut, cph, cre], Roger Bivand [ctb, cph], Vincent J. Carey [ctb, cph], Saikat DebRoy [ctb, cph], Stephen Eglen [ctb, cph], Rajarshi Guha [ctb, cph], Swetlana Herbrandt [ctb], Nicholas Lewin-Koh [ctb, cph], Mark Myatt [ctb, cph], Michael Nelson [ctb], Ben Pfaff [ctb], Brian Quistorff [ctb], Frank Warmerdam [ctb, cph], Stephen Weigand [ctb, cph], Free Software Foundation, Inc. [cph]'
+author = 'R Core Team [aut, cph, cre] (02zz1nj61), Roger Bivand [ctb, cph], Vincent J. Carey [ctb, cph], Saikat DebRoy [ctb, cph], Stephen Eglen [ctb, cph], Rajarshi Guha [ctb, cph], Swetlana Herbrandt [ctb], Nicholas Lewin-Koh [ctb, cph], Mark Myatt [ctb, cph], Michael Nelson [ctb], Ben Pfaff [ctb], Brian Quistorff [ctb], Frank Warmerdam [ctb, cph], Stephen Weigand [ctb, cph], Free Software Foundation, Inc. [cph]'
 
 [renv.packages.fs]
 package = 'fs'
@@ -968,7 +965,7 @@ author = 'Winston Chang [aut], Joe Cheng [aut], Charlie Gao [aut, cre] (ORCID: <
 
 [renv.packages.lattice]
 package = 'lattice'
-version = '0.22-6'
+version = '0.22-7'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 4.0.0)']
@@ -1093,19 +1090,20 @@ author = 'Hadley Wickham [aut], Jim Hester [aut], Winston Chang [aut, cre], Kiri
 
 [renv.packages.mgcv]
 package = 'mgcv'
-version = '1.9-1'
+version = '1.9-3'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 3.6.0)', 'nlme (>= 3.1-64)']
 hash = ''
 title = 'Mixed GAM Computation Vehicle with Automatic Smoothness Estimation'
+'authors@r' = 'person(given = "Simon", family = "Wood", role = c("aut", "cre"), email = "simon.wood@r-project.org")'
 maintainer = 'Simon Wood <simon.wood@r-project.org>'
 description = "Generalized additive (mixed) models, some of their extensions and  other generalized ridge regression with multiple smoothing  parameter estimation by (Restricted) Marginal Likelihood,  Generalized Cross Validation and similar, or using iterated  nested Laplace approximation for fully Bayesian inference. See  Wood (2017) <doi:10.1201/9781315370279> for an overview.  Includes a gam() function, a wide variety of smoothers, 'JAGS'  support and distributions beyond the exponential family."
 license = 'GPL (>= 2)'
 imports = ['methods', 'stats', 'graphics', 'Matrix', 'splines', 'utils']
 suggests = ['parallel', 'survival', 'MASS']
 needscompilation = 'yes'
-author = 'Simon Wood <simon.wood@r-project.org>'
+author = 'Simon Wood [aut, cre]'
 
 [renv.packages.mime]
 package = 'mime'
@@ -1129,13 +1127,13 @@ author = 'Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>, https:/
 
 [renv.packages.nlme]
 package = 'nlme'
-version = '3.1-166'
+version = '3.1-168'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 3.6.0)']
 hash = ''
 title = 'Linear and Nonlinear Mixed Effects Models'
-'authors@r' = 'c(person("José", "Pinheiro", role = "aut", comment = "S version"), person("Douglas", "Bates", role = "aut", comment = "up to 2007"), person("Saikat", "DebRoy", role = "ctb", comment = "up to 2002"), person("Deepayan", "Sarkar", role = "ctb", comment = "up to 2005"), person("EISPACK authors", role = "ctb", comment = "src/rs.f"), person("Siem", "Heisterkamp", role = "ctb", comment = "Author fixed sigma"), person("Bert", "Van Willigen",role = "ctb", comment = "Programmer fixed sigma"), person("Johannes", "Ranke", role = "ctb", comment = "varConstProp()"), person("R Core Team", email = "R-core@R-project.org", role = c("aut", "cre")))'
+'authors@r' = 'c(person("José", "Pinheiro", role = "aut", comment = "S version"), person("Douglas", "Bates", role = "aut", comment = "up to 2007"), person("Saikat", "DebRoy", role = "ctb", comment = "up to 2002"), person("Deepayan", "Sarkar", role = "ctb", comment = "up to 2005"), person("EISPACK authors", role = "ctb", comment = "src/rs.f"), person("Siem", "Heisterkamp", role = "ctb", comment = "Author fixed sigma"), person("Bert", "Van Willigen",role = "ctb", comment = "Programmer fixed sigma"), person("Johannes", "Ranke", role = "ctb", comment = "varConstProp()"), person("R Core Team", email = "R-core@R-project.org", role = c("aut", "cre"), comment = c(ROR = "02zz1nj61")))'
 maintainer = 'R Core Team <R-core@R-project.org>'
 description = 'Fit and compare Gaussian linear and nonlinear mixed-effects models.'
 url = 'https://svn.r-project.org/R-packages/trunk/nlme/'
@@ -1145,18 +1143,18 @@ imports = ['graphics', 'stats', 'utils', 'lattice']
 suggests = ['MASS', 'SASmixed']
 encoding = 'UTF-8'
 needscompilation = 'yes'
-author = 'José Pinheiro [aut] (S version), Douglas Bates [aut] (up to 2007), Saikat DebRoy [ctb] (up to 2002), Deepayan Sarkar [ctb] (up to 2005), EISPACK authors [ctb] (src/rs.f), Siem Heisterkamp [ctb] (Author fixed sigma), Bert Van Willigen [ctb] (Programmer fixed sigma), Johannes Ranke [ctb] (varConstProp()), R Core Team [aut, cre]'
+author = 'José Pinheiro [aut] (S version), Douglas Bates [aut] (up to 2007), Saikat DebRoy [ctb] (up to 2002), Deepayan Sarkar [ctb] (up to 2005), EISPACK authors [ctb] (src/rs.f), Siem Heisterkamp [ctb] (Author fixed sigma), Bert Van Willigen [ctb] (Programmer fixed sigma), Johannes Ranke [ctb] (varConstProp()), R Core Team [aut, cre] (02zz1nj61)'
 
 [renv.packages.nnet]
 package = 'nnet'
-version = '7.3-19'
+version = '7.3-20'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 3.0.0)', 'stats', 'utils']
 hash = ''
 title = 'Feed-Forward Neural Networks and Multinomial Log-Linear Models'
-'authors@r' = 'c(person("Brian", "Ripley", role = c("aut", "cre", "cph"), email = "ripley@stats.ox.ac.uk"), person("William", "Venables", role = "cph"))'
-maintainer = 'Brian Ripley <ripley@stats.ox.ac.uk>'
+'authors@r' = 'c(person("Brian", "Ripley", role = c("aut", "cre", "cph"), email = "Brian.Ripley@R-project.org"), person("William", "Venables", role = "cph"))'
+maintainer = 'Brian Ripley <Brian.Ripley@R-project.org>'
 description = 'Software for feed-forward neural networks with a single hidden layer, and for multinomial log-linear models.'
 url = 'http://www.stats.ox.ac.uk/pub/MASS4/'
 license = 'GPL-2 | GPL-3'
@@ -1360,7 +1358,7 @@ author = 'Hadley Wickham [trl, cre, cph], RStudio [cph], Sridhar Ratnakumar [aut
 
 [renv.packages.renv]
 package = 'renv'
-version = '1.1.2'
+version = '1.1.5'
 source = 'Repository'
 repository = 'CRAN'
 hash = ''
@@ -1373,12 +1371,12 @@ url = 'https://rstudio.github.io/renv/, https://github.com/rstudio/renv'
 bugreports = 'https://github.com/rstudio/renv/issues'
 license = 'MIT + file LICENSE'
 imports = ['utils']
-suggests = ['BiocManager', 'cli', 'compiler', 'covr', 'cpp11', 'devtools', 'gitcreds', 'jsonlite', 'jsonvalidate', 'knitr', 'miniUI', 'modules', 'packrat', 'pak', 'R6', 'remotes', 'reticulate', 'rmarkdown', 'rstudioapi', 'shiny', 'testthat', 'uuid', 'waldo', 'yaml', 'webfakes']
+suggests = ['BiocManager', 'cli', 'compiler', 'covr', 'cpp11', 'devtools', 'generics', 'gitcreds', 'jsonlite', 'jsonvalidate', 'knitr', 'miniUI', 'modules', 'packrat', 'pak', 'R6', 'remotes', 'reticulate', 'rmarkdown', 'rstudioapi', 'shiny', 'testthat', 'uuid', 'waldo', 'yaml', 'webfakes']
 vignettebuilder = 'knitr'
 roxygennote = '7.3.2'
 encoding = 'UTF-8'
 needscompilation = 'no'
-author = 'Kevin Ushey [aut, cre] (<https://orcid.org/0000-0003-2880-7407>), Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>), Posit Software, PBC [cph, fnd]'
+author = 'Kevin Ushey [aut, cre] (ORCID: <https://orcid.org/0000-0003-2880-7407>), Hadley Wickham [aut] (ORCID: <https://orcid.org/0000-0003-4757-117X>), Posit Software, PBC [cph, fnd]'
 'config/testthat/edition' = '3'
 'config/needs/website' = 'tidyverse/tidytemplate'
 
@@ -1433,7 +1431,7 @@ systemrequirements = 'pandoc (>= 1.14) - http://pandoc.org'
 
 [renv.packages.rpart]
 package = 'rpart'
-version = '4.1.23'
+version = '4.1.24'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 2.15.0)', 'graphics', 'stats', 'grDevices']
@@ -1633,14 +1631,14 @@ author = 'Kevin Ushey'
 
 [renv.packages.spatial]
 package = 'spatial'
-version = '7.3-17'
+version = '7.3-18'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 3.0.0)', 'graphics', 'stats', 'utils']
 hash = ''
 title = 'Functions for Kriging and Point Pattern Analysis'
-'authors@r' = 'c(person("Brian", "Ripley", role = c("aut", "cre", "cph"), email = "ripley@stats.ox.ac.uk"), person("Roger", "Bivand", role = "ctb"), person("William", "Venables", role = "cph"))'
-maintainer = 'Brian Ripley <ripley@stats.ox.ac.uk>'
+'authors@r' = 'c(person("Brian", "Ripley", role = c("aut", "cre", "cph"), email = "Brian.Ripley@R-project.org"), person("Roger", "Bivand", role = "ctb"), person("William", "Venables", role = "cph"))'
+maintainer = 'Brian Ripley <Brian.Ripley@R-project.org>'
 description = 'Functions for kriging and point pattern analysis.'
 url = 'http://www.stats.ox.ac.uk/pub/MASS4/'
 license = 'GPL-2 | GPL-3'
@@ -1696,7 +1694,7 @@ author = 'Hadley Wickham [aut, cre, cph], Posit Software, PBC [cph, fnd]'
 
 [renv.packages.survival]
 package = 'survival'
-version = '3.7-0'
+version = '3.8-3'
 source = 'Repository'
 repository = 'CRAN'
 depends = ['R (>= 3.5.0)']

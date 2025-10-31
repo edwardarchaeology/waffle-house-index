@@ -8,10 +8,12 @@ entrypoint = 'app.R'
 validate = true
 files = [
   '/app.R',
-  '/.posit/publish/Waffle-House-Index-JHRE.toml',
-  '/.posit/publish/deployments/deployment-PT3I.toml',
+  '/renv.lock',
+  '/.posit/publish/Waffle-House-Index-CB9C.toml',
+  '/.posit/publish/deployments/deployment-45TO.toml',
   '/historical_data'
 ]
 title = 'Waffle-House-Index'
+secrets = ['MAPTILER_API_KEY']
 
 [r]
