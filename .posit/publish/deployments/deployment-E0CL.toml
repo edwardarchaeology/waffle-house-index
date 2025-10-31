@@ -6,12 +6,12 @@ client_version = '1.23.18'
 created_at = ''
 dismissed_at = ''
 type = 'r-shiny'
-configuration_name = 'Waffle-House-Index-S1BN'
-id = '019a373c-be2e-784e-d1f9-492badc4560b'
-dashboard_url = 'https://connect.posit.cloud/ecleland/content/019a373c-be2e-784e-d1f9-492badc4560b'
-direct_url = 'https://019a373c-be2e-784e-d1f9-492badc4560b.share.connect.posit.cloud'
-logs_url = 'https://connect.posit.cloud/ecleland/content/019a373c-be2e-784e-d1f9-492badc4560b/history'
-deployed_at = '2025-10-30T19:07:28-05:00'
+configuration_name = 'Waffle-House-Index-EF4H'
+id = '019a3799-6dbd-3d7e-6059-aac17a923e2a'
+dashboard_url = 'https://connect.posit.cloud/ecleland/content/019a3799-6dbd-3d7e-6059-aac17a923e2a'
+direct_url = 'https://019a3799-6dbd-3d7e-6059-aac17a923e2a.share.connect.posit.cloud'
+logs_url = 'https://connect.posit.cloud/ecleland/content/019a3799-6dbd-3d7e-6059-aac17a923e2a/history'
+deployed_at = '2025-10-30T19:16:00-05:00'
 
 [connect_cloud]
 account_name = 'ecleland'
@@ -32,13 +32,13 @@ entrypoint = 'app.R'
 validate = true
 files = [
   '/app.R',
-  '/.posit/publish/Waffle-House-Index-S1BN.toml',
-  '/.posit/publish/deployments/deployment-12KQ.toml',
+  '/renv.lock',
+  '/.posit/publish/Waffle-House-Index-EF4H.toml',
+  '/.posit/publish/deployments/deployment-E0CL.toml',
   '/historical_data',
-  '/renv.lock'
+  '/renv'
 ]
 title = 'Waffle-House-Index'
-secrets = ['MAPTILER_API_KEY']
 
 [configuration.r]
 version = '4.5.1'
